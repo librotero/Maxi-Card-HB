@@ -1,0 +1,36 @@
+.base{
+    position:relative;
+    flex-wrap: wrap;
+  align-content: flex-end;
+
+   
+}
+.izquierda{
+    position: absolute;
+    left:10%;
+    top: 10%;
+    display: block;
+    h1{
+
+        color: white;
+    }
+    .secc-izq-1
+    {
+        display: flex;
+        background-color: red;;
+    
+    }
+}
+.derecha{
+    position: absolute;
+    right: 0;
+    top: 10%;
+
+    h1
+    {
+        color:red;
+    }
+}
+.seccion{
+    margin:20px;
+}
