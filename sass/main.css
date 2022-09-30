@@ -1,5 +1,13 @@
 body {
   background-color: black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.cabecera {
+  display: flex;
+  justify-content: center;
 }
 
 .base {
@@ -13,11 +21,6 @@ body {
   left: 10%;
   top: 10%;
   display: block;
-}
-
-.secc-izq-1 {
-  display: flex;
-  position: relative;
 }
 
 .secc-izq-3 {
@@ -35,14 +38,12 @@ body {
 .derecha {
   position: absolute;
   right: 0;
-  top: 10%;
+  top: 0;
 }
 
 .timming {
-  width: 500px;
-  position: absolute;
-  top: -50px;
-  right: -150px;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 .timming .cont-temporizador {
   display: flex;
@@ -52,7 +53,7 @@ body {
 .timming .countdown {
   display: flex;
   justify-content: space-beetwen;
-  width: 500px;
+  width: 600px;
   flex-wrap: wrap;
 }
 .timming .countdown div {
@@ -70,8 +71,8 @@ body {
   display: grid;
   place-items: center;
   border: none;
-  height: 60px;
-  width: 60px;
+  height: 100px;
+  width: 100px;
   color: #fff;
   font-size: 1.5rem;
   font-weight: bold;
@@ -107,4 +108,78 @@ body {
 .secc-izq-2 {
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+/*base code*/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+/*the animation definition*/
+@-webkit-keyframes bounce {
+  0%, 100%, 20%, 53%, 80% {
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+  40%, 43% {
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0);
+  }
+  70% {
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0);
+  }
+  90% {
+    transform: translate3d(0, -4px, 0);
+  }
+}
+@keyframes bounce {
+  0%, 100%, 20%, 53%, 80% {
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+  40%, 43% {
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0);
+  }
+  70% {
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0);
+  }
+  90% {
+    transform: translate3d(0, -4px, 0);
+  }
+}
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  transform-origin: center bottom;
+}
+
+.imagenS {
+  position: absolute;
+}
+
+@media screen and (max-width: 920px) {
+  .base {
+    display: inline-block;
+  }
+  .secc-izq-1 {
+    display: block;
+  }
 }/*# sourceMappingURL=main.css.map */

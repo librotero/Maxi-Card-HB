@@ -1,94 +1,108 @@
-
-body{
+body {
     background-color: black;
-}
-.base{
-    position:relative;
-    flex-wrap: wrap;
-  align-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    display:flex;
 }
 
-  .izquierda{
+.cabecera{
+    display:flex;
+    justify-content: center;
+
+}
+
+
+
+
+
+.base {
+    position: relative;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.izquierda {
     position: absolute;
-    left:10%;
+    left: 10%;
     top: 10%;
     display: block;
-  }
-    .secc-izq-1
-    {
-        display: flex;
-        position:relative;
-        
-        
-    
-    }
-    .secc-izq-3{
-        display: flex;
-        .btnSpotify{
-            flex: 50%;
-            cursor:pointer;
-        }
-        .btnInstagram{
-            flex: 50%;
-            cursor:pointer;
-        }
+}
+
+.secc-izq-3 {
+    display: flex;
+
+    .btnSpotify {
+        flex: 50%;
+        cursor: pointer;
     }
 
-.derecha{
+    .btnInstagram {
+        flex: 50%;
+        cursor: pointer;
+    }
+}
+
+.derecha {
     position: absolute;
     right: 0;
-    top: 30%; 
+    top: 0;
 }
-.timming{
-    width:500px;
-    position:absolute;
-    top:-50px;;
-    right:-150px;
-    .cont-temporizador{
+
+.timming {
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+
+    .cont-temporizador {
         display: flex;
-        justify-content: center;   
-        margin-top: 50px; 
+        justify-content: center;
+        margin-top: 50px;
     }
 
-    .countdown{
+    .countdown {
         display: flex;
         justify-content: space-beetwen;
-        width: 500px;
+        width: 600px;
         flex-wrap: wrap;
     }
-    .countdown div{
+
+    .countdown div {
         display: grid;
         place-items: center;
         padding: 5px;
     }
-    h1{
+
+    h1 {
         text-align: center;
         color: #fff;
         font-size: 40px;
         padding: 30px 10px;
     }
-    p{
+
+    p {
         display: grid;
         place-items: center;
         border: none;
-        height: 60px;
-        width: 60px;
+        height: 100px;
+        width:100px;
         //border-radius: 50%;
         color: #fff;
         font-size: 1.5rem;
         font-weight: bold;
         background-image: url('../img/Marcotiming.png');
         background-repeat: no-repeat;
-        background-size:cover;
+        background-size: cover;
     }
-    span{
+
+    span {
         display: block;
         text-align: center;
         color: #ffffff;
         font-size: 1.5rem;
         font-weight: 400;
     }
-    .final-sms{
+
+    .final-sms {
         position: absolute;
         left: 0;
         right: 0;
@@ -100,19 +114,117 @@ body{
         transition: ease-in-out 0.5s;
         background-color: #333;
     }
-    .final-sms h2{
+
+    .final-sms h2 {
         text-align: center;
         font-size: 100px;
         color: #fff;
     }
 }
 
-.secc-izq-2{
-    margin-top:50px;
-    margin-bottom:50px;
+.secc-izq-2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
 
 }
 
-.imagen{
 
+.imagen {}
+
+/*base code*/
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+
+  }
+  .animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+  .animated.hinge {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+  }
+  /*the animation definition*/
+  @-webkit-keyframes bounce {
+    0%, 100%, 20%, 53%, 80% {
+      -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+      transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0)
+    }
+    40%,
+    43% {
+      -webkit-transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+      transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+      -webkit-transform: translate3d(0, -30px, 0);
+      transform: translate3d(0, -30px, 0)
+    }
+    70% {
+      -webkit-transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+      transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+      -webkit-transform: translate3d(0, -15px, 0);
+      transform: translate3d(0, -15px, 0)
+    }
+    90% {
+      -webkit-transform: translate3d(0, -4px, 0);
+      transform: translate3d(0, -4px, 0)
+    }
+  }
+  @keyframes bounce {
+    0%, 100%, 20%, 53%, 80% {
+      -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+      transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+      -webkit-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0)
+    }
+    40%,
+    43% {
+      -webkit-transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+      transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+      -webkit-transform: translate3d(0, -30px, 0);
+      -ms-transform: translate3d(0, -30px, 0);
+      transform: translate3d(0, -30px, 0)
+    }
+    70% {
+      -webkit-transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+      transition-timing-function: cubic-bezier(0.755, .050, .855, .060);
+      -webkit-transform: translate3d(0, -15px, 0);
+      -ms-transform: translate3d(0, -15px, 0);
+      transform: translate3d(0, -15px, 0)
+    }
+    90% {
+      -webkit-transform: translate3d(0, -4px, 0);
+      -ms-transform: translate3d(0, -4px, 0);
+      transform: translate3d(0, -4px, 0)
+    }
+  }
+  .bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-transform-origin: center bottom;
+    -ms-transform-origin: center bottom;
+    transform-origin: center bottom;
+   // position: relative;
+    
+  }
+  .imagenS{
+    position:absolute
+  }
+  
+  
+@media screen and (max-width: 920px){
+    .base{
+        display:inline-block;
+    }
+    .derecha{
+        //display:none;
+    }
+    .secc-izq-1{
+        display: block;
+    }
 }
