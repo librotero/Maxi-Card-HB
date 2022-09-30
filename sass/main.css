@@ -3,9 +3,130 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
+  padding: 10px;
 }
 
-q .cabecera {
+.cabecera {
+  width: 100%;
+  margin-top: 50px;
+  position: relative;
+}
+.cabecera .play {
+  position: absolute;
+  justify-content: flex-start;
+}
+.cabecera .instagram {
+  position: absolute;
+  right: 0;
+}
+
+.logo {
+  margin-top: 150px;
+}
+
+.timming {
   display: flex;
   justify-content: center;
+  margin: 5vw;
+}
+
+.countdown {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  flex-wrap: wrap;
+}
+
+.countdown div {
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  padding: 10px 10px;
+}
+
+p {
+  display: grid;
+  place-items: center;
+  height: 50px;
+  width: 50px;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  background-image: url("../img/Marcotiming.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+span {
+  display: block;
+  padding: 1px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.final-sms {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: grid;
+  place-items: center;
+  transform: translateY(-100%);
+  transition: ease-in-out 0.5s;
+  background-color: #333;
+}
+
+.final-sms h2 {
+  text-align: center;
+  font-size: 100px;
+  color: #fff;
+}
+
+#boton1 {
+  position: absolute;
+  top: 0;
+  background: #F7DE7A;
+  width: 50px;
+  height: 50px;
+  color: rgb(0, 0, 0);
+  border-radius: 50%;
+  transition: 0.5s;
+  font-size: 25px;
+  text-align: center;
+}
+
+#boton1:hover {
+  background: rgb(0, 0, 0);
+  border-radius: 50%;
+  border: 3px solid white;
+  color: #a8013c;
+  text-align: center;
+}
+
+#boton2 {
+  background: #F7DE7A;
+  width: 100px;
+  height: 100px;
+  color: white;
+  border-radius: 50%;
+  border: 10px solid white;
+  transition: 0.5s;
+  font-size: 40px;
+  text-align: center;
+}
+
+#boton2:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  border-radius: 50% rgb(0, 0, 0);
+  color: rgb(166, 3, 6);
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

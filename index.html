@@ -5,10 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./sass/main.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
     <title>Document</title>
 </head>
 <body>
-    <div class="cabecera">
+    <section>
+        <div class="cabecera">
+            <div class="play">
+                <audio class="audio1" src="L-Gante.mp3" preload="auto">
+                    Tu navegador no soporta el elemento <code>audio</code>.
+                </audio>
+                <button id="boton1"><i class="fas fa-play"></i></button>
+                <img src="./img/BotónPlay.png" alt="">  
+              </div>
+            <div class="instagram">
+              <img src="./img/BotónInstagram.png" alt="">  
+            </div>
+        </div>
+        <div class="logo">
+            <img src="./img/LogoMaxi1.png" alt="" width:100px;>  
+        </div>
         <div class="timming">
             <div class="countdown">
                 <div>
@@ -29,7 +46,26 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+
+    <script type="text/javascript">
+        var v = document.getElementsByClassName("audio1") [0]; 
+var sound = false;
+
+var boton = document.getElementById("boton1");
+boton.addEventListener("click", function(){
+if (!sound) {
+    v.play();
+    this.innerHTML="<i class=\"fas fa-pause\">";
+    sound = true;
+} else {
+    v.pause();
+    this.innerHTML="<i class=\"fas fa-play\">";
+    sound = false;
+}
+});
+</script>
 
     <!--archivo js -->
     <script src="./js/main.js"></script>
