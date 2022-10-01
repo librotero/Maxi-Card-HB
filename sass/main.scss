@@ -418,7 +418,27 @@ span{
   color: white;
   text-transform: uppercase;
 position: absolute;
-top:200px;
+top:65%;
+a{
+  text-decoration: none;
+  color: white;
+}
+&:hover{
+  background-color: #34374b;
+  border: 1px solid #F7DE7A;
+}
+}
+.btn-wpp{
+  width: 200px;
+  height: 40px;
+  border-radius:5px;
+  background-color: #262833;
+  border: 1px solid #F7DE7A;
+  color: white;
+  text-transform: uppercase;
+position: absolute;
+top:50%;
+
 a{
   text-decoration: none;
   color: white;
