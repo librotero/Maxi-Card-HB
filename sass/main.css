@@ -154,24 +154,15 @@ span {
   text-align: center;
 }
 
-.foto img {
-  width: 350px;
-}
-
 .foto {
   position: relative;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-.foto .brillitos1 {
-  z-index: -1;
-  position: absolute;
-  top: -650px;
-  right: 20%;
-}
-.foto .brillitos {
-  z-index: -1;
-  position: absolute;
-  top: -650px;
-  left: 10%;
+.foto .ubi {
+  width: 100%;
+  margin: 50px;
 }
 .foto .marco {
   z-index: 1;
@@ -180,11 +171,7 @@ span {
 .fotito {
   position: absolute;
   top: 7%;
-  left: 21%;
-}
-
-.fotito img {
-  width: 210px;
+  z-index: 2;
 }
 
 .brillitos {
@@ -192,6 +179,15 @@ span {
   top: 0;
   right: 0;
   z-index: -1;
+  top: -150px;
+}
+
+.brillitos1 {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  z-index: -1;
+  top: -150px;
 }
 
 /*base code*/
@@ -376,6 +372,26 @@ span {
 }
 
 .ubicacion {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  width: 20vw;
+  margin: 20px;
+}
+
+.btn-ubi {
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #262833;
+  border: 1px solid #F7DE7A;
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  top: 200px;
+}
+.btn-ubi a {
+  text-decoration: none;
+  color: white;
+}
+.btn-ubi:hover {
+  background-color: #34374b;
+  border: 1px solid #F7DE7A;
 }/*# sourceMappingURL=main.css.map */
