@@ -2,9 +2,9 @@ body {
   background-color: black;
   justify-content: center;
   align-items: center;
-  display: flex;
   padding: 10px;
   padding-top: 20px;
+  width: 100%;
 }
 
 .cabecera {
@@ -161,15 +161,37 @@ span {
 .foto {
   position: relative;
 }
+.foto .brillitos1 {
+  z-index: -1;
+  position: absolute;
+  top: -650px;
+  right: 20%;
+}
+.foto .brillitos {
+  z-index: -1;
+  position: absolute;
+  top: -650px;
+  left: 10%;
+}
+.foto .marco {
+  z-index: 1;
+}
 
 .fotito {
   position: absolute;
   top: 7%;
-  left: 20%;
+  left: 21%;
 }
 
 .fotito img {
   width: 210px;
+}
+
+.brillitos {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
 }
 
 /*base code*/
@@ -178,8 +200,8 @@ span {
   animation-duration: 3s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
 }
 
 .animated.infinite {
@@ -346,4 +368,14 @@ span {
 .shake {
   -webkit-animation-name: shake;
   animation-name: shake;
+}
+
+.wpp {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.ubicacion {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }/*# sourceMappingURL=main.css.map */
