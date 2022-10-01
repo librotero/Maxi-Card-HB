@@ -31,6 +31,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   & img{
 
   }
@@ -41,6 +42,7 @@ body {
   justify-content:center;
   position: relative;
   margin-top: 50px;;
+  width: 100%;
   .btn-ubi{
     position: absolute;
     top: 70%;
@@ -56,6 +58,7 @@ body {
   display: flex;
   justify-content: center;
   z-index: 1;
+  width: 100%;
 
   .brillitos{
     position: absolute;
@@ -63,12 +66,14 @@ body {
 
     left: 0;
     z-index: -1;
+    width: 100%;
   }
   .brillitos1{
     position: absolute;
     right: 0;
     bottom:100px;
     z-index: -1;
+    width: 100%;
   }
 
   .btn-wpp{
@@ -83,14 +88,15 @@ body {
   }
   .marco{
     z-index: 1;
-    
 
   }
 }
 .fotito{
   position: absolute;
   top:7%; 
+  left: 5%;
   z-index: 2;
+  width: 2vw;
 }
 
 

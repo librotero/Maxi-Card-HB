@@ -30,12 +30,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .ubicacion {
   display: flex;
   justify-content: center;
   position: relative;
   margin-top: 50px;
+  width: 100%;
 }
 .ubicacion .btn-ubi {
   position: absolute;
@@ -51,18 +53,21 @@ body {
   display: flex;
   justify-content: center;
   z-index: 1;
+  width: 100%;
 }
 .foto .brillitos {
   position: absolute;
   bottom: 100px;
   left: 0;
   z-index: -1;
+  width: 100%;
 }
 .foto .brillitos1 {
   position: absolute;
   right: 0;
   bottom: 100px;
   z-index: -1;
+  width: 100%;
 }
 .foto .btn-wpp {
   position: absolute;
@@ -80,7 +85,9 @@ body {
 .fotito {
   position: absolute;
   top: 7%;
+  left: 5%;
   z-index: 2;
+  width: 2vw;
 }
 
 #boton1 {
