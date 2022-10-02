@@ -1,99 +1,20 @@
 body {
   background-color: black;
-  justify-content: center;
-  align-items: center;
-  padding: 100px;
-  display: flex;
+  margin: 10px;
 }
 
-.cabecera {
-  position: relative;
+.section1 {
   display: flex;
   justify-content: center;
-}
-.cabecera .play {
-  position: absolute;
-  top: 0;
-  left: 39%;
-}
-
-.instagram {
   margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-
-.logo {
-  margin-top: 50px;
-  overflow-y: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.ubicacion {
-  display: flex;
-  justify-content: center;
+.section1 .play {
   position: relative;
-  margin-top: 50px;
-  width: 100%;
 }
-.ubicacion .btn-ubi {
-  position: absolute;
-  top: 70%;
-  left: 38%;
-  cursor: pointer;
-  width: 350px;
-}
-
-.foto {
-  position: relative;
-  justify-content: center;
-  display: flex;
-  justify-content: center;
-  z-index: 1;
-  width: 100%;
-}
-.foto .brillitos {
-  position: absolute;
-  bottom: 100px;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-}
-.foto .brillitos1 {
-  position: absolute;
-  right: 0;
-  bottom: 100px;
-  z-index: -1;
-  width: 100%;
-}
-.foto .btn-wpp {
-  position: absolute;
-  top: 55%;
-  left: 31%;
-  width: 350px;
-}
-.foto .ubi {
-  margin: 50px;
-}
-.foto .marco {
-  z-index: 1;
-}
-
-.fotito {
-  position: absolute;
-  top: 7%;
-  left: 5%;
-  z-index: 2;
-  width: 2vw;
-}
-
-#boton1 {
+.section1 .play button {
   position: absolute;
   top: -1px;
-  left: 15%;
+  left: 0%;
   background: #F7DE7A;
   width: 50px;
   height: 50px;
@@ -104,39 +25,87 @@ body {
   text-align: center;
 }
 
-#boton1:hover {
-  background: rgb(0, 0, 0);
-  border-radius: 50%;
-  border: 3px solid white;
-  color: #a8013c;
-  text-align: center;
+.section2 {
+  display: flex;
+  justify-content: center;
+}
+.section2 .instagram {
+  position: relative;
+}
+.section2 .instagram .link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(168, 1, 59, 0);
+  top: 5px;
+  left: 5px;
+  width: 40px;
+  height: 40px;
+  color: rgba(206, 9, 9, 0);
+}
+.section2 .instagram .link2 {
+  position: absolute;
+  background-color: rgba(168, 1, 59, 0);
+  top: 25px;
+  right: 0;
+  width: 160px;
+  height: 20px;
+  color: rgba(255, 255, 255, 0);
 }
 
-#boton2 {
-  background: #F7DE7A;
-  width: 100px;
-  height: 100px;
-  color: white;
-  border-radius: 50%;
-  border: 10px solid white;
-  transition: 0.5s;
-  font-size: 40px;
-  text-align: center;
+.section3 {
+  display: flex;
+  justify-content: center;
+}
+.section3 img {
+  width: 100%;
 }
 
-#boton2:hover {
-  background: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
-  border-radius: 50% rgb(0, 0, 0);
-  color: rgb(166, 3, 6);
-  text-align: center;
+.section4 {
+  display: flex;
+  justify-content: center;
+}
+
+.section5 {
+  position: relative;
+}
+.section5 .marco {
+  width: 100%;
+}
+.section5 .fotito {
+  position: absolute;
+  top: 6%;
+  left: 19.5%;
+}
+.section5 .fotito img {
+  width: 60vw;
+}
+
+.section6 {
+  margin: 10px;
+}
+.section6 .ubi {
+  width: 100%;
+}
+
+.section7 {
+  margin: 10px;
+}
+.section7 .ubi {
+  width: 100%;
+}
+
+.section8 {
+  display: flex;
+  justify-content: center;
 }
 
 .timming {
+  overflow-y: auto;
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .countdown {
@@ -160,15 +129,14 @@ h1 {
 p {
   display: grid;
   place-items: center;
-  height: 80px;
-  width: 80px;
+  height: 15vw;
+  width: 15vw;
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   background-image: url("../img/Marcotiming.png");
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 10px;
 }
 
 span {
@@ -176,7 +144,7 @@ span {
   padding: 1px;
   text-align: center;
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -197,172 +165,4 @@ span {
   text-align: center;
   font-size: 100px;
   color: #fff;
-}
-
-/*base code*/
-.animatedFoto {
-  -webkit-animation-duration: 1s;
-  animation-duration: 3s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-iteration-count: 3;
-          animation-iteration-count: 3;
-}
-
-.animated.infinite {
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
-
-.animated.hinge {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-}
-
-/*the animation definition*/
-@-webkit-keyframes pulse {
-  0% {
-    transform: scale3d(1, 1, 1);
-  }
-  50% {
-    transform: scale3d(1.05, 1.05, 1.05);
-  }
-  100% {
-    transform: scale3d(1, 1, 1);
-  }
-}
-@keyframes pulse {
-  0% {
-    transform: scale3d(1, 1, 1);
-  }
-  50% {
-    transform: scale3d(1.05, 1.05, 1.05);
-  }
-  100% {
-    transform: scale3d(1, 1, 1);
-  }
-}
-.pulse {
-  -webkit-animation-name: pulse;
-  animation-name: pulse;
-}
-
-/*base code*/
-.animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-.animated.infinite {
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
-
-.animated.hinge {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-}
-
-/*the animation definition*/
-@-webkit-keyframes flip {
-  0% {
-    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  40% {
-    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  50% {
-    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  80% {
-    transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  100% {
-    transform: perspective(400px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-}
-@keyframes flip {
-  0% {
-    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  40% {
-    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  50% {
-    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  80% {
-    transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  100% {
-    transform: perspective(400px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-}
-.animated.flip {
-  -webkit-backface-visibility: visible;
-  backface-visibility: visible;
-  -webkit-animation-name: flip;
-  animation-name: flip;
-}
-
-/*base code*/
-.animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 4s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-.animated.infinite {
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
-
-.animated.hinge {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-}
-
-/*the animation definition*/
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.fadeIn {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
 }/*# sourceMappingURL=main.css.map */
