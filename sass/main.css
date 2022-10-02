@@ -80,7 +80,7 @@ body {
 .section5 .brillo {
   z-index: -1;
   position: absolute;
-  top: -800px;
+  top: -900px;
   left: 0;
 }
 .section5 .brillo img {
@@ -89,7 +89,7 @@ body {
 .section5 .brillo1 {
   z-index: -1;
   position: absolute;
-  top: -800px;
+  top: -900px;
   right: 0;
 }
 .section5 .brillo1 img {
