@@ -95,7 +95,7 @@ body{
   .fotito{
     position:absolute;
     top:6%;
-    left:19.5%;
+    left:19%;
     z-index: 2;
 
 img{
@@ -162,7 +162,6 @@ h1{
   text-align: center;
   color: #fff;
   font-size: 40px;
-  padding: 10px 10px;
 }
 p{
   display: grid;
@@ -175,13 +174,13 @@ p{
   background-image: url("../img/Marcotiming.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 20px;
+  padding: 10px;
+  margin:10px;
 
 
 }
 span{
   display: block;
-  padding: 1px;
   text-align: center;
   color: #ffffff;
   font-size: 1rem;
