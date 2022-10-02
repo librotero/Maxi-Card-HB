@@ -72,11 +72,31 @@ body {
 }
 .section5 .marco {
   width: 100%;
+  z-index: 1;
+}
+.section5 .brillo {
+  z-index: -1;
+  position: absolute;
+  top: -800px;
+  left: 0;
+}
+.section5 .brillo img {
+  width: 50%;
+}
+.section5 .brillo1 {
+  z-index: -1;
+  position: absolute;
+  top: -800px;
+  right: 0;
+}
+.section5 .brillo1 img {
+  width: 50%;
 }
 .section5 .fotito {
   position: absolute;
   top: 6%;
   left: 19.5%;
+  z-index: 2;
 }
 .section5 .fotito img {
   width: 60vw;

@@ -72,11 +72,32 @@ body{
   position:relative;
   .marco{
     width:100%;
+    z-index: 1;
+  }
+  .brillo{
+    z-index: -1;
+    position: absolute;
+    top:-800px;
+    left:0;
+    img{
+      width:50%
+    }
+  }
+  .brillo1{
+    z-index: -1;
+    position: absolute;
+    top:-800px;
+    right:0;
+    img{
+      width:50%
+    }
   }
   .fotito{
     position:absolute;
     top:6%;
     left:19.5%;
+    z-index: 2;
+
 img{
   width:60vw;
 }
