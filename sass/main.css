@@ -32,7 +32,7 @@ body {
 }
 .section2 .instagram {
   position: relative;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.452);
   padding: 10px;
   border-radius: 5px;
 }
